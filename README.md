@@ -26,7 +26,7 @@ The [Web Scraping Notebook](./mission_to_mars.ipynb) notebook contains web scrap
 
 ## MongoDB and Flask Application
 
-The [Flask App](./app.py) app uses MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
+The [Flask App](./app.py) uses MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
 
 * The Jupyter notebook above was converted into a Python script called [Web Scraping script](./scrape_mars.py) with a function called scrape that will execute all of the scraping code from above and return one Python dictionary containing all of the scraped data.
 
@@ -38,4 +38,4 @@ The [Flask App](./app.py) app uses MongoDB with Flask templating to create a new
 
 * The [HTML Template](./templates/index.html) contains the HTML code used  to take the mars data dictionary and display all of the data in HTML elements shown in the screenshot below:
 
-![Mars Web App](./screenshots/app_screenshot.png)
+![Mars Web App](./screenshots/app_screenshot.PNG)
