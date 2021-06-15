@@ -2,26 +2,25 @@
 
 ## Web Scraping
 
-The [Web Scraping Notebook](./mission_to_mars.ipynb) notebook contains web scraping to to get the following information:
+The [Web Scraping Notebook](./mission_to_mars.ipynb) notebook contains the web scraping code used to to get the following information:
 
 ### NASA Mars News
 
-* Scrape the Mars News Site and collect the latest News Title and Paragraph Text.
+* Scraped the [Mars News Site](https://redplanetscience.com/) and collected the latest News Title and Paragraph Text.
 
 ### JPL Mars Space Images - Featured Image
 
-* Visit the url for the Featured Space Image site.
-* Use splinter to navigate the site and find the image url for the current Featured Mars Image.
+* Visited the url for the [Featured Space Image site](https://spaceimages-mars.com/) and used splinter to navigate the site and find the image url for the current Featured Mars Image.
 
 ### Mars Facts
 
-* Visit the Mars Facts webpage here and use Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc.
+* Visited the [Mars Facts webpage](https://galaxyfacts-mars.com/) and used Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc.
 
 * Used Pandas to convert the data to a HTML table string.
 
 ### Mars Hemispheres
 
-* Visit the astrogeology site here to obtain high resolution images for each of Mar's hemispheres.
+* Visited the [astrogeology site](https://marshemispheres.com/) to obtain high resolution images for each of Mar's hemispheres.
 * Appended the dictionary with the image url string and the hemisphere title to a list. This list contains one dictionary for each hemisphere.
 
 ## MongoDB and Flask Application
@@ -32,6 +31,7 @@ The [Flask App](./app.py) uses MongoDB with Flask templating to create a new HTM
 
 * Next, I created a route called /scrape that will import the scrape_mars.py script and call the scrape function.
   * The return values are stored in Mongo as a Python dictionary.
+
 * A root route was also created that will query the Mongo database and pass the mars data into an HTML template to display the data.
 
 ### HTML Templates
