@@ -31,7 +31,7 @@ The [Flask App](./app.py) uses MongoDB with Flask templating to create a new HTM
 * The Jupyter notebook above was converted into a Python script called [Web Scraping script](./scrape_mars.py) with a function called scrape that will execute all of the scraping code from above and return one Python dictionary containing all of the scraped data.
 
 * Next, I created a route called /scrape that will import the scrape_mars.py script and call the scrape function.
-* * The return values are stored in Mongo as a Python dictionary.
+  * The return values are stored in Mongo as a Python dictionary.
 * A root route was also created that will query the Mongo database and pass the mars data into an HTML template to display the data.
 
 ### HTML Templates
